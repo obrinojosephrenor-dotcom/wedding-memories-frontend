@@ -11,7 +11,7 @@ export default function LandingPage() {
         </p>
 
         <h1 className="text-5xl font-bold text-[#445c3f] mb-4">
-          Nicki
+          Nikki
         </h1>
 
         <p className="text-3xl text-gray-500 mb-4">
