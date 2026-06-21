@@ -12,7 +12,12 @@ api.interceptors.request.use(
         "token"
       );
 
-    if (token) {
+    // Only add guest token if
+    // Authorization header does not already exist
+    if (
+      token &&
+      !config.headers.Authorization
+    ) {
       config.headers.Authorization =
         `Bearer ${token}`;
     }
